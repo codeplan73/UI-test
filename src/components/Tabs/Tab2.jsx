@@ -8,6 +8,7 @@ import paypal from './../../assets/paypal.png'
 import mastercard from './../../assets/mastercard.png'
 import fundraising from './../../assets/fundraising.png'
 import debit from './../../assets/direct.png'
+import { BiSolidUpArrow } from 'react-icons/bi'
 
 const Tab2 = () => {
   return (
@@ -32,7 +33,8 @@ const Tab2 = () => {
         </div>
       </div>
 
-      <div className="card">
+      <div className="card card2">
+        <BiSolidUpArrow className="arrow" />
         <p className="card-text">
           £40 could help answer an animal Rescue Team take on an urgent animal
           rescue

@@ -7,7 +7,6 @@ function App() {
 
   return (
     <div>
-      <h1>Ui Test Session</h1>
       <Tabs />
     </div>
   )

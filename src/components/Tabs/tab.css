@@ -1,6 +1,6 @@
 .container {
   background: #fff;
-  width: 1024px;
+  width: 920px;
   margin: 100px auto;
 }
 
@@ -52,6 +52,7 @@ p {
 .row .btn-row {
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
   gap: 5px;
 }
 
@@ -105,6 +106,15 @@ p {
   margin-bottom: 20px;
   padding: 20px 10px;
   font-weight: 500;
+}
+.card2 {
+  position: relative;
+}
+.arrow {
+  position: absolute;
+  color: rgb(251, 206, 133);
+  top: 3px;
+  right: 110px;
 }
 
 footer {
@@ -174,6 +184,13 @@ footer > .text-underline {
     padding: 20px;
     width: 47%;
     margin-bottom: 10px;
+  }
+
+  .arrow {
+    position: absolute;
+    color: rgb(251, 206, 133);
+    top: -25px;
+    right: 170px;
   }
 
   .card,

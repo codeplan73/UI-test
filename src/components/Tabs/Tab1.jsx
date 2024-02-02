@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import { FaLock } from 'react-icons/fa'
 import { GrStatusGood } from 'react-icons/gr'
+import { BiSolidUpArrow } from 'react-icons/bi'
 import './tab.css'
 import visa from './../../assets/visa.png'
 import paypal from './../../assets/paypal.png'
@@ -32,7 +33,8 @@ const Tab2 = () => {
         </div>
       </div>
 
-      <div className="card">
+      <div className="card card2">
+        <BiSolidUpArrow className="arrow" />
         <p className="card-text">
           £12 could help answer an emergency call to our animal Rescue line
         </p>
