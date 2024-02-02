@@ -13,19 +13,19 @@ const Tab2 = () => {
   return (
     <div className="row">
       <div className="card">
-        <p>I would like to make a donation of</p>
+        <p className="info">I would like to make a donation of</p>
         <div className="btn-row">
-          <button className="btn">£6</button>
-          <button className="btn btn-good">
+          <button className="btn btn-wd">£6</button>
+          <button className="btn btn-good btn-wd">
             <span>£12 </span> <GrStatusGood className="icon-good" />
           </button>
-          <button className="btn">£18</button>
-          <button className="btn">£30</button>
-          <button className="btn btn-other">
+          <button className="btn btn-wd">£18</button>
+          <button className="btn btn-wd">£30</button>
+          <button className="btn btn-other btn-fw">
             <span>£</span>
             <span>Other amount</span>
           </button>
-          <button className="btn btn-pay">
+          <button className="btn btn-pay btn-fw">
             <span>Donate £12 monthly</span>
             <FaLock className="icon-lock" />
           </button>
