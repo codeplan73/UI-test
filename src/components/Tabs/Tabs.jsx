@@ -1,8 +1,6 @@
-// Tabs.js
 import React, { useState } from 'react'
-import { FaLock } from 'react-icons/fa'
-import { GrStatusGood } from 'react-icons/gr'
-import './tab.css'
+import Tab1 from './Tab1'
+import Tab2 from './Tab2'
 
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState('tab1')
@@ -13,39 +11,19 @@ const Tabs = () => {
 
   return (
     <div className="container">
-      <button onClick={() => handleTabClick('tab1')}>Tab 1</button>
-      <button onClick={() => handleTabClick('tab2')}>Tab 2</button>
-      <div className="tabs">
-        {activeTab === 'tab1' ? (
-          <div className="row">
-            <p>I would like to make a donation of</p>
-            <div className="btn-row">
-              <button className="btn">£6</button>
-              <button className="btn">
-                <span>£12 </span> <GrStatusGood className="icon-good" />
-              </button>
-              <button className="btn">£18</button>
-              <button className="btn">£30</button>
-              <button className="btn">
-                <span>£</span>
-                <span>Other amount</span>
-              </button>
-              <button className="btn">
-                <span>Donate £12 monthly</span>
-                <FaLock className="icon-lock" />
-              </button>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
-              aliquam!
-            </p>
-
-            <div></div>
-          </div>
-        ) : (
-          <div>Tab 2 details here... this is the second o</div>
-        )}
-      </div>
+      <button
+        className={`btn-tab1 ${activeTab === 'tab1' ? 'btn-tab-active' : ''}`}
+        onClick={() => handleTabClick('tab1')}
+      >
+        Donate Montly
+      </button>
+      <button
+        className={`btn-tab2 ${activeTab === 'tab2' ? 'btn-tab-active' : ''}`}
+        onClick={() => handleTabClick('tab2')}
+      >
+        Donate Once
+      </button>
+      <div className="tabs">{activeTab === 'tab1' ? <Tab1 /> : <Tab2 />}</div>
     </div>
   )
 }

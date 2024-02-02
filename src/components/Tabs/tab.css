@@ -4,23 +4,135 @@
   margin: 100px auto;
 }
 
+.btn-tab-active {
+  background: #fff !important;
+  color: darkblue !important;
+  font-weight: 700;
+  border-top: 1px solid #9d9b9b !important;
+  border-right: 1px solid #9d9b9b !important;
+  border-left: 1px solid #9d9b9b !important;
+  border-bottom: none !important;
+  padding: 12px 20px !important;
+  margin-bottom: -2px;
+}
+
+.container > .btn-tab1 {
+  background: darkblue;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+}
+.container > .btn-tab2 {
+  background: darkblue;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+}
+
 .tabs {
-  background: #e1e1e1;
+  background: #fff;
+  border: 1px solid rgb(224, 217, 217);
+  box-shadow: 7px 7px 15px -10px rgba(0, 0, 0, 0.5);
+}
+p {
+  font-size: 14px;
+  margin-bottom: 5px;
 }
 
 .row {
   display: flex;
   gap: 5px;
   flex-direction: column;
-  padding: 10px 20px;
+}
+
+.card {
+  padding: 0px 20px;
 }
 
 .row .btn-row {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  gap: 5px;
 }
 
 .btn {
   padding: 10px 40px;
+  font-size: 14px;
+  font-weight: bold;
+  width: max-content;
+}
+
+.btn-good {
+  background: rgb(39, 156, 167);
+  border: 2px solid rgb(39, 156, 167);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.icon-good {
+  color: rgb(39, 156, 167);
+  background: #fff;
+  border-radius: 100%;
+  font-size: 16px;
+}
+
+.btn-other {
+  background: #fff;
+  border: 1px solid #000;
+  padding: 11px 24px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn-pay {
+  background: orange;
+  border: 1px solid orange;
+  padding: 11px 24px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.card-text {
+  background: rgb(251, 206, 133);
+  margin-bottom: 20px;
+  padding: 20px 10px;
+  font-weight: 500;
+}
+
+footer {
+  background: rgb(235, 235, 235);
+  padding: 20px 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+  justify-content: space-between;
+}
+
+.images-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+img {
+  /* width: 2rem; */
+  height: auto;
+  margin-top: 0.7rem;
+}
+
+footer div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+footer > .text-underline {
+  text-decoration: underline;
 }
