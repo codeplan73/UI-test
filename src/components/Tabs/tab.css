@@ -1,0 +1,26 @@
+.container {
+  background: #fff;
+  width: 1024px;
+  margin: 100px auto;
+}
+
+.tabs {
+  background: #e1e1e1;
+}
+
+.row {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+
+.row .btn-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 10px 40px;
+}
